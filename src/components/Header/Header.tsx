@@ -16,9 +16,11 @@ const Navbar = (): JSX.Element => {
           <div className="title">한정훈</div>
           <small>Front-end Developer</small>
         </div>
-        <CustomButton icon="pdf" invert>
-          이력서 보기
-        </CustomButton>
+        <a href="https://bit.ly/3d7lxAr" target="blank">
+          <CustomButton icon="pdf" invert>
+            이력서 보기
+          </CustomButton>
+        </a>
       </nav>
     </header>
   );
