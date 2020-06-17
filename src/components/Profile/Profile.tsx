@@ -28,7 +28,7 @@ const Profile = (): JSX.Element => {
             <tr>
               <td>GitHub</td>
               <td>
-                <a href="https://github.com/hjhun0504" target="blank">
+                <a href="https://bit.ly/2UQPFd2" target="blank">
                   github.com/hjhun0504
                 </a>
               </td>
@@ -36,7 +36,7 @@ const Profile = (): JSX.Element => {
             <tr>
               <td>Blog</td>
               <td>
-                <a href="https://velog.io/@huhu" target="blank">
+                <a href="https://bit.ly/3hE9yOq" target="blank">
                   velog.io/@huhu
                 </a>
               </td>
