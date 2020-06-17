@@ -55,14 +55,16 @@ const WorksItem = ({ item }: Props): JSX.Element => {
       </div>
       <div className="button-container">
         {github && (
-          <a href={github} target="blank">
-            <CustomButton icon="github" large>
-              GitHub
-            </CustomButton>
-          </a>
+          <div className="button-wrapper">
+            <a href={github} target="blank">
+              <CustomButton icon="github" large>
+                GitHub
+              </CustomButton>
+            </a>
+          </div>
         )}
         {url && (
-          <div className="url">
+          <div className="button-wrapper">
             <a href={url} target="blank">
               <CustomButton icon="link" large>
                 배포 링크
