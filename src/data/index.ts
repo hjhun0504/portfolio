@@ -38,7 +38,7 @@ export const devProjects: ProjectData[] = [
     role: '개인 프로젝트',
     desc: [
       'React, TypeScript를 사용해 Todo + 시간관리 Application 개발',
-      '데이터를 그래프, 표 등으로 가공하여 시각화하여 제공',
+      '데이터를 그래프, 표 등으로 시각화하여 제공',
       'React hooks를 사용한 상태관리',
     ],
     videos: [{ name: 'todo.mov', width: '100%' }],
