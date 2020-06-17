@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.Hello {
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    // word-break: keep-all;
+  }
+}
+
+@include mobile {
+  .Hello {
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.CustomButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.36);
+  }
+
+  .text {
+    margin-right: 6px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  &.large {
+    font-size: 17px;
+    padding: 7px 20px;
+  }
+
+  &.invert {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .text,
+    .icon {
+      color: $color-white;
+    }
+  }
+}
+
+@include mobile {
+  .CustomButton {
+    font-size: 14px;
+    padding: 5px 10px;
+
+    &.large {
+      font-size: 16px;
+      padding: 5px 15px;
+    }
+  }
+}

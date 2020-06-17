@@ -1,0 +1,22 @@
+@import './styles/mixins';
+@import './styles/variables';
+
+.App {
+  section:first-child {
+    margin-top: 120px;
+  }
+
+  section:last-child {
+    margin-bottom: 35px;
+  }
+
+  @include mobile {
+    section:first-child {
+      margin-top: 95px;
+    }
+
+    section:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}

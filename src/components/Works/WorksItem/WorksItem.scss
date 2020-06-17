@@ -1,0 +1,161 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+// header를 제외한 컨텐츠 사이 간격
+$content-padding: 10px;
+
+.WorksItem {
+  margin-bottom: 40px;
+
+  // header
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+
+    .title-wrapper {
+      i {
+        margin-left: 10px;
+        font-size: 24px;
+      }
+
+      display: flex;
+      align-items: center;
+    }
+
+    small {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .stack {
+      display: flex;
+      align-items: center;
+
+      .item {
+        border: 1px solid $color-blue;
+        color: $color-blue;
+        font-size: 14px;
+        padding: 4px 12px;
+        border-radius: 17px;
+        margin-right: 5px;
+      }
+
+      .item:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // info
+  .info {
+    display: flex;
+    margin-bottom: $content-padding;
+
+    .summary {
+      width: 126px;
+      font-weight: 500;
+
+      small {
+        font-size: 12px;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+
+    ul {
+      flex-grow: 1;
+      padding-left: 14px;
+
+      li {
+        display: list-item;
+        font-size: 14px;
+        margin-bottom: 8px;
+        line-height: 150%;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+      li:before {
+        content: '\2022';
+        display: inline-block;
+        width: 14px;
+        margin-left: -14px;
+      }
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 5px;
+      margin-bottom: $content-padding;
+    }
+  }
+
+  .video-list,
+  .image-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  video,
+  img {
+    height: auto;
+    // margin-top: 10px;
+  }
+
+  // video:first-child,
+  // img:first-child {
+  //   margin-top: 0;
+  // }
+}
+
+.WorksItem:last-child {
+  margin-bottom: 0;
+}
+
+@include mobile {
+  .WorksItem {
+    margin-bottom: 20px;
+
+    header {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .project {
+        margin-bottom: 6px;
+      }
+    }
+
+    i {
+      font-size: 18px !important;
+    }
+
+    .item {
+      font-size: 12px !important;
+      padding: 4px 8px !important;
+      margin-right: 3px !important;
+    }
+
+    .item:last-child {
+      margin-right: 0 !important;
+    }
+
+    .info {
+      flex-direction: column;
+
+      .summary {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.Profile {
+  margin-top: $mobile-padding-column;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .skills {
+    flex-grow: 1;
+    font-size: 16px;
+    margin-bottom: $mobile-padding-column;
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        font-weight: 500;
+        background-color: rgba(58, 73, 97, 0.07);
+        padding: 10px 10px;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .contact {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    .icon {
+      margin-right: 5px;
+    }
+
+    td {
+      padding: 5px;
+    }
+  }
+}
+
+@include mobile {
+  .Profile {
+    li {
+      font-size: 14px;
+      padding: 7px 7px;
+    }
+  }
+}
