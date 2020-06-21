@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { techSkills } from '@data/index';
+import { contact, techSkills } from '@data/index';
 
 import './Profile.scss';
 
@@ -19,28 +19,16 @@ const Profile = (): JSX.Element => {
         <h2>Contact</h2>
         <table>
           <tbody>
-            <tr>
-              <td>Email</td>
-              <td>
-                <a href="mailto:hjhun0504@gmail.com">hjhun0504@gmail.com</a>
-              </td>
-            </tr>
-            <tr>
-              <td>GitHub</td>
-              <td>
-                <a href="https://bit.ly/2UQPFd2" target="blank">
-                  github.com/hjhun0504
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>Blog</td>
-              <td>
-                <a href="https://bit.ly/3hE9yOq" target="blank">
-                  velog.io/@huhu
-                </a>
-              </td>
-            </tr>
+            {contact.map((item, index) => (
+              <tr key={index}>
+                <td>{item.name}</td>
+                <td>
+                  <a href={item.uri} target="blank">
+                    {item.desc}
+                  </a>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

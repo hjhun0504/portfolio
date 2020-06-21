@@ -2,6 +2,24 @@ import { ProjectData } from '@interfaces/index';
 
 export const resumeUrl = 'https://bit.ly/3d7lxAr';
 
+export const contact = [
+  {
+    name: 'Email',
+    desc: 'hjhun0504@gmail.com',
+    uri: 'mailto:hjhun0504@gmail.com',
+  },
+  {
+    name: 'GitHub',
+    desc: 'github.com/hjhun0504',
+    uri: 'https://bit.ly/3hGW5p5',
+  },
+  {
+    name: 'Blog',
+    desc: 'velog.io/@huhu',
+    uri: 'https://bit.ly/2AxFD9T',
+  },
+];
+
 const STACK = {
   REACT: 'React',
   NEXTJS: 'Next.js',
@@ -92,6 +110,7 @@ export const devProjects: ProjectData[] = [
     url: 'https://bit.ly/2Y6EsH9',
   },
 ];
+
 export const gameDesignProjects: ProjectData[] = [
   {
     title: '도망가 친구들',
