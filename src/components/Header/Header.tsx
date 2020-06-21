@@ -2,6 +2,8 @@ import React from 'react';
 
 import CustomButton from '@components/CustomButton/CustomButton';
 
+import { resumeUrl } from '@data/index';
+
 import './Header.scss';
 
 const Navbar = (): JSX.Element => {
@@ -16,7 +18,7 @@ const Navbar = (): JSX.Element => {
           <div className="title">한정훈</div>
           <small>Front-end Developer</small>
         </div>
-        <a href="https://bit.ly/3d7lxAr" target="blank">
+        <a href={resumeUrl} target="blank">
           <CustomButton icon="pdf" invert>
             이력서 보기
           </CustomButton>

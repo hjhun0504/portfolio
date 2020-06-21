@@ -1,5 +1,7 @@
 import { ProjectData } from '@interfaces/index';
 
+export const resumeUrl = 'https://bit.ly/3d7lxAr';
+
 const STACK = {
   REACT: 'React',
   NEXTJS: 'Next.js',
