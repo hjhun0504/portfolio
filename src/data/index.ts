@@ -92,6 +92,7 @@ export const devProjects: ProjectData[] = [
       'URL 파라미터를 사용한 게시물 검색결과 페이지 라우팅',
     ],
     videos: [{ name: 'board.mov', width: '100%' }],
+    github: 'https://bit.ly/2YhCQKX',
   },
   {
     title: 'LoL 사운드 퀴즈',
