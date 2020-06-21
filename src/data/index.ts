@@ -49,7 +49,7 @@ export const devProjects: ProjectData[] = [
       'HTML을 Symantic하게 마크업',
       '미디어쿼리를 사용해 반응형으로 개발',
     ],
-    github: 'https://bit.ly/2USOkSX',
+    github: 'https://bit.ly/2N5RmiE',
   },
   {
     title: 'Daily Planner',
@@ -62,8 +62,8 @@ export const devProjects: ProjectData[] = [
       'React hooks를 사용한 상태관리',
     ],
     videos: [{ name: 'todo.mov', width: '100%' }],
-    github: 'https://bit.ly/30SRry3',
-    url: 'https://bit.ly/3fxKhn6',
+    github: 'https://bit.ly/3eaB5oa',
+    url: 'https://bit.ly/3e8siDv',
   },
   {
     title: 'YPER-SHIELD',
@@ -108,7 +108,7 @@ export const devProjects: ProjectData[] = [
       { name: 'lol1.webp', width: '49%' },
       { name: 'lol2.webp', width: '49%' },
     ],
-    url: 'https://bit.ly/2Y6EsH9',
+    url: 'https://bit.ly/2YVNXbJ',
   },
 ];
 
